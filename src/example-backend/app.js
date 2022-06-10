@@ -13,12 +13,13 @@ var schema = buildSchema(`
 var root = {
   hello: () => {
     return "Hello world!";
-  },
+  }
 };
 
 var app = express();
 
 app.use((req, res, next) => {
+  console.log("Here are the request headers:");
   console.log(req.headers);
   next();
 });
@@ -28,7 +29,7 @@ app.use(
   graphqlHTTP({
     schema: schema,
     rootValue: root,
-    graphiql: true,
+    graphiql: true
   })
 );
 app.listen(3002);
