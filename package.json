@@ -4,6 +4,9 @@
   "main": "index.js",
   "author": "Cassidy Scheffer <hello@cassidy.codes>",
   "license": "MIT",
+  "scripts": {
+    "start": "node ./src/example-backend/app.js && yarn mesh dev"
+  },
   "dependencies": {
     "@graphql-mesh/cli": "^0.73.1",
     "@graphql-mesh/graphql": "^0.27.2",
