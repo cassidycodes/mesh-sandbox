@@ -1,0 +1,14 @@
+{
+  "name": "mesh-sandbox",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Cassidy Scheffer <hello@cassidy.codes>",
+  "license": "MIT",
+  "dependencies": {
+    "@graphql-mesh/cli": "^0.73.1",
+    "@graphql-mesh/graphql": "^0.27.2",
+    "express": "^4.18.1",
+    "express-graphql": "^0.12.0",
+    "graphql": "^16.5.0"
+  }
+}

@@ -1,0 +1,8 @@
+sources:
+  - name: ExampleBackend
+    handler:
+      graphql:
+        endpoint: http://localhost:3002/graphql
+        operationHeaders:
+          Authorization: "{context.headers['authorization']}"
+
