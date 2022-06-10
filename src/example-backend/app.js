@@ -17,10 +17,12 @@ var root = {
 };
 
 var app = express();
+
 app.use((req, res, next) => {
   console.log(req.headers);
   next();
 });
+
 app.use(
   "/graphql",
   graphqlHTTP({
